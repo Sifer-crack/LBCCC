@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Long Bay College Chess Club" />
+    <meta name="keywords" content="Chess, Club, Long Bay College" />
+    <meta name="author" content="Sam Andreev" />
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+    <title>Long Bay College Chess Club</title>
+</head>
+<body>
+    <header>
+        <!-- Logo Container -->
+        <div class="logo-container">
+            <a href="#home" class="logo-link">
+                <img src="/assets/Logo.png" alt="LBCCC Logo" />
+            </a>
+        </div>
+
+        <!-- Navigation Container -->
+        <nav class="nav-container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li class="nav_bar_separator"></li>
+                <li><a href="#aboutUs">About Us</a></li>
+                <li class="nav_bar_separator"></li>
+                <li><a href="#pastEvents">Past Events</a></li>
+                <li class="nav_bar_separator"></li>
+                <li><a href="#futureEvents">Future Events</a></li>
+                <li class="nav_bar_separator"></li>
+                <li><a href="#learnChess">Learn Chess</a></li>
+                <li class="nav_bar_separator"></li>
+                <li><a href="#contactUs">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Login/Signup Container -->
+        <div class="auth-container">
+            <button class="auth-btn" onclick="showPopup('Login functionality coming soon!')">Log In</button>
+            <button class="auth-btn" onclick="showPopup('Sign up functionality coming soon!')">Sign Up</button>
+        </div>
+
+        <!-- Hamburger menu for mobile -->
+        <div class="hamburger">
+            <div></div>
+        </div>
+    </header>
+
+    <main>
+        <section id="aboutUs">
+            <div id="aboutUsImage"></div>
+            <div class="content">
+                <h2 >About Us</h2>
+                <p>Long Bay Chess club is a safe space where players of all abilities, or even students who are new to the game, can come together and play or learn chess.</p>
+            </div>
+        </section>
+
+        <section id="pastEvents">
+          <h2 class="pastEventsHeader">Past Events</h2>
+          <div class="events-container">
+            <!-- Event 1 -->
+            <div class="event-card">
+              <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <img src="assets/chessTournament1.webp" alt="Event 1 Image 1">
+                </div>
+                <div class="mySlides fade">
+                  <img src="assets/chessTournament2.jpg" alt="Event 1 Image 2">
+                </div>
+                <div class="mySlides fade">
+                  <img src="assets/tournament.jfif" alt="Event 1 Image 3">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <div class="event-info">
+                <h3>Event Name 1 <span class="event-date">• Date 1</span></h3>
+                <p class="event-description">Description of Event 1. This is where you can provide details about the event.</p>
+              </div>
+            </div>
+        
+            <!-- Event 2 -->
+            <div class="event-card">
+              <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <img src="assets/tournamentImage2.jfif" alt="Event 2 Image 1">
+                </div>
+                <div class="mySlides fade">
+                  <img src="event2-image2.jpg" alt="Event 2 Image 2">
+                </div>
+                <div class="mySlides fade">
+                  <img src="event2-image3.jpg" alt="Event 2 Image 3">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <div class="event-info">
+                <h3>Event Name 2 <span class="event-date">• Date 2</span></h3>
+                <p class="event-description">Description of Event 2. This is where you can provide details about the event.</p>
+              </div>
+            </div>
+        
+            <!-- Event 3 -->
+            <div class="event-card">
+              <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <img src="assets/tournamentImage3.jfif" alt="Event 3 Image 1">
+                </div>
+                <div class="mySlides fade">
+                  <img src="event3-image2.jpg" alt="Event 3 Image 2">
+                </div>
+                <div class="mySlides fade">
+                  <img src="event3-image3.jpg" alt="Event 3 Image 3">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <div class="event-info">
+                <h3>Event Name 3 <span class="event-date">• Date 3</span></h3>
+                <p class="event-description">Description of Event 3. This is where you can provide details about the event.</p>
+              </div>
+            </div>
+        
+            <!-- Event 4 -->
+            <div class="event-card">
+              <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <img src="assets/chessTournament2.jpg" alt="Event 4 Image 1">
+                </div>
+                <div class="mySlides fade">
+                  <img src="event4-image2.jpg" alt="Event 4 Image 2">
+                </div>
+                <div class="mySlides fade">
+                  <img src="event4-image3.jpg" alt="Event 4 Image 3">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <div class="event-info">
+                <h3>Event Name 4 <span class="event-date">• Date 4</span></h3>
+                <p class="event-description">Description of Event 4. This is where you can provide details about the event.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <section id="futureEvents">
+          <h2>Future Events</h2>
+          <p>Stay tuned for upcoming chess tournaments and club activities.</~p>
+          <div id="calendar"></div>
+        </section>
+  
+        <section id="learnChess">
+          <h2>Learn Chess</h2>
+          <p>
+            Resources and tutorials for beginners and advanced players to improve
+            their chess skills.
+          </p>
+        </section>
+  
+        <section id="contactUs">
+          <h2>Contact Us</h2>
+          <p>Get in touch with us for more information or to join the club.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Long Bay College Chess Club. All rights reserved.</p>
+        <p>Long Bay College offers students a wide range of opportunities to enhance the high school experience.</p>
+    </footer>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <p id="popup-message"></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
